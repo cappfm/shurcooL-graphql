@@ -103,7 +103,7 @@ func (c *Client) do(ctx context.Context, op operationType, v interface{}, variab
 // Specification: https://facebook.github.io/graphql/#sec-Errors.
 type Errors []struct {
 	Message    string
-	Path       []string
+	Path       []any
 	Extensions map[string]any
 	Locations  []struct {
 		Line   int
